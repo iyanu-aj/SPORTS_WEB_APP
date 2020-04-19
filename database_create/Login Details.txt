@@ -1,0 +1,12 @@
+Accounts:
+
+Administrator
+
+Email: admin@email.com,
+Password: 12345
+
+
+Player
+
+Email:player1@email.com
+Password: 12345

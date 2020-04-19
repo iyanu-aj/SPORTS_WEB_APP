@@ -1,0 +1,314 @@
+/*Index Page Styling*/
+
+
+/*Header Style*/
+
+body {
+	overflow-x: hidden;
+}
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+
+* {box-sizing: border-box;
+text-decoration: none}
+
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 20px 10px;
+	background-image: linear-gradient(to right, lightgray, #f1f1f1, whitesmoke ,#f1f1f1);
+
+}
+
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.header a:hover {
+	opacity:85%;
+}
+
+.header a.active {
+	background-color: lightslategray;
+	opacity: 90%;
+	color: white;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.header-right {
+		float: none;
+	}
+
+}
+
+#logoimg {
+	margin:-83px;
+	margin-bottom:-85px;
+	margin-left:auto;
+}
+
+
+.logo-container,
+.nav-links,
+.faq {
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+	position: inherit;
+}
+
+
+.logo {
+	font-weight: 400;
+	margin: 5px;
+	color: purple;
+}
+
+nav {
+	flex: 2;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+	color: #5f5f79;
+	font-size: 18px;
+	text-decoration: none;
+}
+.faq {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+
+
+.main-page {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+.intro {
+	flex: 1;
+}
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+.reg {
+	padding: 50px 0px 0px 0px;
+}
+.reg-select {
+	border: 2px solid #c36cbb;
+	background: transparent;
+	color: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+.reg-add {
+	background: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+	margin: 30px 0px 0px 30px;
+}
+
+.dis-cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.dis-cover img {
+	height: 80%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+
+.circle-1 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+.circle-2 {
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+.circle-3 {
+	position: absolute;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.main-page {
+		flex-direction: column;
+	}
+	.intro {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+
+	.dis-cover img {
+		height: 80%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+}
+
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0px;
+	width: 100%;
+	background:lightgray;
+	height: 23px;
+	opacity: inherit;
+	margin: 0px;
+	padding: 0px;
+	z-index: 1;
+
+}
+
+#footer-left{
+	font-size: 12px;
+	color: #fff;
+	padding: 0;
+	float: left;
+	margin: 8px 0 0 10px;
+	bottom: 0;
+}
+
+#footer-left a{
+	color: white;
+	text-decoration: none;
+}
+
+#footer-right{
+	font-size: 12px;
+	color: #fff;
+	padding: 0;
+	float: right;
+	margin: 8px 10px 0 0;
+	bottom: 0;
+
+
+}
+
+
+#footer-right a{
+	color: white;
+	text-decoration: none;
+	text-align: right;
+	padding: 2px 4px;
+
+}
+
+.alert-error {
+	color: #f00;
+	background-color: #ceced6;
+	box-shadow: 0 0 0 1px #a13ca1 inset, 0 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.alert:empty{
+	display: none;
+}
+.alert-success {
+	color: #881588;
+	background-color: #ceced6;
+	box-shadow: 0 0 0 1px #2a551e inset, 0 5px 10px rgba(0, 0, 0, 0.75);
+	padding-bottom: 17px;
+	margin: 2px;
+	text-align: center;
+	font-size: 17px;
+}
+
+.user {
+	border-radius: 50px;
+}
+

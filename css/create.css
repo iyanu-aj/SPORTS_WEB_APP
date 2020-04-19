@@ -1,0 +1,44 @@
+#create-assign{
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1050px){
+    .container_fix{
+        grid-gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container_fix{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+input.form-control {
+    width: 60%;
+    border: 1px solid #c36cbb;
+    color: #31182b;
+    height: 50px;
+
+}
+input.form-control2 {
+    width: auto;
+    border: 1px solid #c36cbb;
+    color: #31182b;
+    height: 30px;
+}
+input.form-control1 {
+    width: auto;
+    border: 1px solid #c36cbb;
+    color: #31182b;
+
+}
+
+
+/*table*/
+
+#table {
+    font-size: 15px;
+}
+
