@@ -4,7 +4,7 @@ session_start();
 
 // Check if user is logged in using the session variable
 if ( $_SESSION['logged_inPlayer'] != 1 ) {
-    $_SESSION['message'] = "Registered! You can login to view your profile page!";
+    $_SESSION['message'] = "You can login to view your profile page!";
     header("location: success.php");
 }
 else {
