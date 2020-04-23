@@ -14,7 +14,7 @@ $row= mysqli_fetch_array($result);
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Update Scores</title>
+    <title>View</title>
     <?php include 'profile.php'; ?>
 
 
@@ -47,7 +47,7 @@ $row= mysqli_fetch_array($result);
 <form class="" name="" method="post" action="">
 
     <div class="" style="padding-bottom:5px; ">
-        <h3>Update Scores</h3>
+        <h3>View Available Players</h3>
         <div>
             Game ID: <input style="border: hidden; outline: none; background-color: transparent" type="text" name="Game_ID" value="<?php echo $row['Game_ID']; ?>"> <br>
             Date: <input style="border: hidden; outline: none; background-color: transparent" type="text" name="Date" value="<?php echo $row['Date']; ?>"> <br>
