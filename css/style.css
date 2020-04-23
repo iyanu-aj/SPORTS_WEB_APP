@@ -231,7 +231,11 @@ nav {
 	}
 
 	.dis-cover img {
-		height: 80%;
+		height: 40%;
+		position: absolute;
+		top: 65%;
+		z-index: -2;
+
 	}
 	.small-circle,
 	.medium-circle,
