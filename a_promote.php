@@ -1,3 +1,4 @@
+<!--Adminstrator promote page-->
 
 <!DOCTYPE html>
 <html >
@@ -18,7 +19,7 @@
     <form action="update_promote.php" method="post">
         <div>
             <select class="optsel" name="username" required>
-                <option value="" selected disabled hidden>Choose user's account</option>
+                <option value="" selected disabled hidden>Choose account</option>
                 <?php
 
                 $stmt->data_seek(0);

@@ -18,10 +18,10 @@
 
 <br>
     <p><b>Username:</b></p>
-    <p class=""> <?=  $username ?></p>
+    <p> <?=  $username ?></p>
 
     <p><b>Email Address:</b></p>
-    <p class=""> <?=  $email ?></p>
+    <p> <?=  $email ?></p>
 
     <hr>
 

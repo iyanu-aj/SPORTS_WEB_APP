@@ -41,6 +41,7 @@ else {
      }
      $type = $type_err ="";
 
+//     PHP mysqli stmt_init() Function to select from table in database
 
 
       $sql = "
@@ -49,7 +50,11 @@ else {
       GROUP BY EMAIL
           ORDER BY EMAIL
       ";
-      $stmt = $link->prepare($sql);
+// Create a prepared statement
+
+$stmt = $link->prepare($sql);
+// Execute query
+
       $stmt->execute();
       $stmt->store_result();
       $stmt->bind_result(
@@ -65,8 +70,12 @@ $sql2 = "
           ORDER BY USERNAME
       ";
 $stmt2 = $link->prepare($sql2);
+// Execute query
 $stmt2->execute();
 $stmt2->store_result();
+
+// Bind result variables
+
 $stmt2->bind_result(
     $id,
     $username

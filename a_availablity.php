@@ -1,5 +1,4 @@
-<?php
-?>
+<!--ADMINISTRATOR AVAILABILITY PAGE-->
     <!DOCTYPE html>
     <html>
     <head>
@@ -21,6 +20,8 @@ require_once ('config.php');
     <body>
 
     <div class="content-fixture">
+
+        <!-- GETTING TABLE GAMES AND DELIVER INTO TABLE-->
 
         <?php
 
