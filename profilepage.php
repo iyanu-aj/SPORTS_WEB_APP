@@ -34,9 +34,9 @@ ini_set('display_errors', 0);
     <hr>
 
     <a href="p_fixture.php">Fixtures</a>
+    <a href="p_availablity.php">Availabilty</a>
     <a href="p_team_sheet.php">Team sheet</a>
     <a href="p_photoupload.php">Photo Upload</a>
-    <a href="p_availablity.php">Availabilty</a>
     <a href="p_profile.php">Profile</a>
     <a href="logout.php">Log Out</a>
 

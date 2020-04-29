@@ -34,13 +34,12 @@
 
     <hr>
 
-    <a href="a_promote.php">Promote Users</a>
     <a href="a_create.php">Create a Fixture</a>
-    <a href="team_sheet.php">Team Sheet </a>
-
     <a href="schedule.php">Games Scheduled</a>
     <a href="a_availablity.php">Availability</a>
+    <a href="team_sheet.php">Team Sheet </a>
     <a href="photoupload.php">Photo Upload</a>
+    <a href="a_promote.php">Promote Users</a>
     <a href="adminprofile.php">Profile</a>
     <a href="logout.php"><strong>Log Out</strong></a>
 
