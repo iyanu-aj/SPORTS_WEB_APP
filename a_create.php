@@ -1,12 +1,37 @@
+<?php include 'adminpage.php';
+require_once 'db.php';
+require 'config.php';
+?>
 <!--CREATE A FIXTURE IN ADMIN PAGE-->
 <?php
+/* To create a fixture*/
+if (isset($_POST['team_1']) && isset($_POST['team_2']) && isset($_POST['date']) && isset($_POST['time']) && isset($_POST['location'])) {
+    $sql1=
+        "INSERT INTO games (Team_1, Team_2, Date, Time, Location) VALUES (?,?,?,?,?)
+
+";
+
+    $stmt1=$link->prepare($sql1);
+    $stmt1->bind_param('sssss',
+
+        $_POST['team_1'],
+        $_POST['team_2'],
+        $_POST['date'],
+        $_POST['time'],
+        $_POST['location']
+
+    );
+    $stmt1->execute();
+    $message = "Fixture created successfully!";
+
+}
+
 ?>
     <!DOCTYPE html>
     <html >
     <head>
         <meta charset="UTF-8">
         <title>Create A Game</title>
-        <?php include 'adminpage.php'; ?>
         <link rel="stylesheet" href="css/create.css"/>
         <title>Create</title>
 
@@ -18,8 +43,10 @@
         <h3> Create a Game </h3>
             <div class="container_fix">
 
-            <form action="create_fixture.php" method="post">
+            <form action="" method="post">
                 <p>Hi! <?=$username?>, you can create a game here:</p>
+                <div><?php if(isset($message)) { echo $message; } ?>
+                </div>
 
                 <div>
                     <div>Input Teams</div>

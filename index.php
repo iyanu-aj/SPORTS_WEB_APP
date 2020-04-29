@@ -1,9 +1,11 @@
 <?php
+/*Starting session*/
+session_start();
+
 /* Main page with two forms: sign up and log in */
 require 'db.php';
 
-/*Starting session*/
-session_start();
+
 
 ?>
 

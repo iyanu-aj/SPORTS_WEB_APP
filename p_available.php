@@ -46,7 +46,7 @@ if(isset($_POST['save']))
 <body>
 <div class="content-fixture">
 
-<form method="post" action="">
+<form method="post">
     <div style="color: darkred"><?php if(isset($message)) { echo $message; } ?>
     </div>
     <div >

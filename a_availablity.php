@@ -1,3 +1,4 @@
+<?php include 'adminpage.php'; ?>
 <!--ADMINISTRATOR AVAILABILITY PAGE-->
     <!DOCTYPE html>
     <html>
@@ -5,7 +6,7 @@
         <meta charset="UTF-8">
         <title>Availability</title>
 
-        <?php include 'adminpage.php'; ?>
+
 
     </head>
 

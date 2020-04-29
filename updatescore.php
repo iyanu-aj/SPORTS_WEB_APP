@@ -26,10 +26,10 @@ $row= mysqli_fetch_array($result);
 
 <div class="content-fixture">
 
-<form class="reg" name="" method="post" action="">
+<form class="reg" method="post">
     <div><?php if(isset($message)) { echo $message; } ?>
     </div>
-    <div class="" style="padding-bottom:5px; ">
+    <div style="padding-bottom:5px; ">
         <h3>Update Scores</h3>
     </div>
     Game_ID: <br>

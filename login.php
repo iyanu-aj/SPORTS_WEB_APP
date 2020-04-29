@@ -21,7 +21,7 @@ else { // If User exists
         $_SESSION['username'] = $user['username'];
         $_SESSION['avatar'] = $user['avatar'];
         $_SESSION['active'] = $user['active'];
-        $_SESSION['type'] == $user['type'];
+        $_SESSION['type'] = $user['type'];
 
     //        Redirect to Admin if type is A(Admin)
         if ($user['type'] == "A"){
@@ -30,7 +30,7 @@ else { // If User exists
         // This is how we'll know the user is logged in
         $_SESSION['logged_inAdmin'] = true;
 
-        header("location: adminpage.php");
+        header('location: adminpage.php');
         }
 
 

@@ -33,8 +33,7 @@ else {
 }
 
     require_once 'db.php';
-     $link = mysqli_connect('localhost', 'root', '', 'accountsdb');
-
+    require_once 'config.php';
       // Check connection
      if($link === false){
          die("ERROR: Could not connect. " . mysqli_connect_error());

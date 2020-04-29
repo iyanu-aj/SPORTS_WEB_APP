@@ -1,3 +1,4 @@
+<?php include 'adminpage.php'; ?>
 <!--View Game Schedule and edit for Admin-->
 
 <?php
@@ -7,7 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Schedule</title>
-        <?php include 'adminpage.php'; ?>
+
 
 
     </head>
